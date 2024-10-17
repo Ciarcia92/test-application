@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>New Credit Card Request</title>
+</head>
+<body>
+<p>Hello, <span th:text="${employeeName}">Employee</span>,</p>
+
+<p>
+    A new credit card request has been made by <strong th:text="${clientName}">Client Name</strong> at the bank <strong th:text="${bankName}">Bank Name</strong>.
+</p>
+
+<p>
+    You can review the request and proceed with the credit card creation.
+</p>
+
+<p>
+    Best regards,<br/>
+    Your Bank Application Team
+</p>
+</body>
+</html>
