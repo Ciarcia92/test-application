@@ -15,6 +15,7 @@ import org.springframework.data.annotation.CreatedBy;
 import org.springframework.data.annotation.CreatedDate;
 import org.springframework.data.jpa.domain.support.AuditingEntityListener;
 
+import java.math.BigDecimal;
 import java.math.BigInteger;
 import java.time.LocalDateTime;
 import java.util.ArrayList;
@@ -37,6 +38,8 @@ public class CreditCard {
 
     @Column(unique = true)
     private BigInteger cardNumber;
+
+    private BigDecimal balance = BigDecimal.ZERO;
 
     @Column(name = "PIN", unique = true, nullable = false)
     private String pin;

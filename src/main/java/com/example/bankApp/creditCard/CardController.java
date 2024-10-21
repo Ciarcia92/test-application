@@ -63,22 +63,6 @@ public class CardController {
         return cardResponseDtos;
     }
 
-//    @PostMapping(path = "/", produces = MediaType.APPLICATION_JSON_VALUE)
-//    @ResponseStatus(HttpStatus.CREATED)
-//    public CreditCard addCreditCard(@Valid @RequestBody CreditCard newCreditCard) {
-//        log.info("addCreditCard - start");
-//        CreditCard savedCreditCard = cardService.addCreditCard(newCreditCard);
-//        log.info("addCreditCard - success, card with id {} created", savedCreditCard.getId());
-//        return savedCreditCard;
-//    }
-//    @PostMapping(path = "/", produces = MediaType.APPLICATION_JSON_VALUE)
-//    @ResponseStatus(HttpStatus.CREATED)
-//    public CreditCard addCreditCard(@Valid @RequestBody CreditCard newCreditCard) {
-//        log.info("addCreditCard - start");
-//        CreditCard savedCreditCard = cardService.addCreditCard(newCreditCard);
-//        log.info("addCreditCard - success, card with id {} created", savedCreditCard.getId());
-//        return savedCreditCard;
-//    }
 
     @PostMapping(path = "/dto/", produces = MediaType.APPLICATION_JSON_VALUE)
     @ResponseStatus(HttpStatus.CREATED)
@@ -103,4 +87,21 @@ public class CardController {
         cardService.deleteCardByCardNumber(cardNumber);
         log.info("deleteCreditCardByCardNumber - success - deleted card with fiscal code {}", cardNumber);
     }
+    //    @PostMapping(path = "/", produces = MediaType.APPLICATION_JSON_VALUE)
+//    @ResponseStatus(HttpStatus.CREATED)
+//    public CreditCard addCreditCard(@Valid @RequestBody CreditCard newCreditCard) {
+//        log.info("addCreditCard - start");
+//        CreditCard savedCreditCard = cardService.addCreditCard(newCreditCard);
+//        log.info("addCreditCard - success, card with id {} created", savedCreditCard.getId());
+//        return savedCreditCard;
+//    }
+//    @PostMapping(path = "/", produces = MediaType.APPLICATION_JSON_VALUE)
+//    @ResponseStatus(HttpStatus.CREATED)
+//    public CreditCard addCreditCard(@Valid @RequestBody CreditCard newCreditCard) {
+//        log.info("addCreditCard - start");
+//        CreditCard savedCreditCard = cardService.addCreditCard(newCreditCard);
+//        log.info("addCreditCard - success, card with id {} created", savedCreditCard.getId());
+//        return savedCreditCard;
+//    }
+
 }

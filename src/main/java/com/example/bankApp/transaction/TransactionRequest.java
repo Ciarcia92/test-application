@@ -5,6 +5,8 @@ import jakarta.validation.constraints.NotNull;
 import lombok.Getter;
 import lombok.Setter;
 
+import java.math.BigDecimal;
+
 @Getter
 @Setter
 public class TransactionRequest {
@@ -16,7 +18,7 @@ public class TransactionRequest {
     private String pin;
 
     @NotNull(message = "Amount required")
-    private int amount;
+    private BigDecimal amount;
 
     private String paymentDescription;
 }

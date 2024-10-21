@@ -1,9 +1,10 @@
 package com.example.bankApp.transaction;
 
+import java.math.BigDecimal;
 import java.time.LocalDateTime;
 
 public record TransactionResponseDto(
-        int amount,
+        BigDecimal amount,
         LocalDateTime creationDate,
         String paymentDescription
 ) {

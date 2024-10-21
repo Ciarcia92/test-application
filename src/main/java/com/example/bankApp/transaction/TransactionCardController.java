@@ -34,4 +34,14 @@ public class TransactionCardController {
         return transactionList;
     }
 
+//    @GetMapping(path = "/date/{date}", produces = MediaType.APPLICATION_JSON_VALUE)
+//    public List<TransactionResponseDto> getTransactionByDate(@PathVariable("date") Integer id) {
+//        log.info("getTransactionByUserId - start");
+//        List<TransactionResponseDto> transactionList = transactionService.getTransactionByDate(id);
+//        log.info("getTransactionByUserId - success, found transaction for user with id {}", id);
+//        return transactionList;
+//    }
+
+
+
 }
